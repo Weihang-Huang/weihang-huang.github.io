@@ -34,7 +34,7 @@
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
     .container{max-width:var(--content-default);margin-inline:auto;padding-inline:var(--space-6)}
 
-    /* ── NAV (identical to index.html) ───────────────────────────── */
+    /* ── NAV ──────────────────────────────────────────────────────── */
     .site-nav{position:sticky;top:0;z-index:100;background:oklch(from var(--color-bg) l c h/0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid oklch(from var(--color-text) l c h/0.08)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:var(--space-4)}
     .nav-logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:var(--color-text)}
@@ -76,7 +76,6 @@
     /* ── PUBLICATIONS BODY ────────────────────────────────────────── */
     .pubs-body{padding-block:clamp(var(--space-8),5vw,var(--space-16))}
 
-    /* Year group */
     .year-group{margin-bottom:var(--space-12)}
     .year-group:last-child{margin-bottom:0}
     .year-heading{display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-6)}
@@ -84,7 +83,6 @@
     .year-heading-line{flex:1;height:1px;background:var(--color-divider)}
     .year-heading-count{font-size:var(--text-xs);color:var(--color-text-faint);font-variant-numeric:tabular-nums}
 
-    /* Pub card */
     .pub-list{display:flex;flex-direction:column;gap:0}
     .pub-card{display:grid;grid-template-columns:3rem 1fr;gap:var(--space-5);align-items:start;padding:var(--space-5) 0;border-bottom:1px solid var(--color-divider)}
     .pub-card:last-child{border-bottom:none}
@@ -108,7 +106,7 @@
     .pub-venue-tag em{font-style:italic}
     .pub-cites{display:inline-flex;align-items:center;gap:var(--space-1);font-size:var(--text-xs);color:var(--color-text-faint)}
     .pub-cites svg{flex-shrink:0}
-    .pub-links{display:flex;gap:var(--space-3);flex-wrap:wrap}
+    .pub-links{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-3)}
     .pub-link{font-size:var(--text-xs);font-weight:600;color:var(--color-primary);text-decoration:none;display:inline-flex;align-items:center;gap:4px;padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);border:1px solid oklch(from var(--color-primary) l c h/0.3)}
     .pub-link:hover{background:var(--color-primary-highlight);border-color:var(--color-primary)}
 
@@ -123,7 +121,7 @@
     .btn-outline{background:transparent;color:var(--color-text);border:1px solid oklch(from var(--color-text) l c h/0.2)}
     .btn-outline:hover{background:var(--color-surface-offset);border-color:oklch(from var(--color-text) l c h/0.35)}
 
-    /* ── FOOTER ─────────────────────────────────────────────────── */
+    /* ── FOOTER ──────────────────────────────────────────────────── */
     footer{background:var(--color-surface-offset);border-top:1px solid var(--color-divider);padding-block:var(--space-8)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4)}
     .footer-copy{font-size:var(--text-xs);color:var(--color-text-faint)}
@@ -182,10 +180,10 @@
             <p class="page-lead">Journal articles, conference &amp; workshop papers, and preprints in computational linguistics, authorship attribution, and NLP. Citation counts sourced from Google Scholar.</p>
             <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);flex-wrap:wrap;">
               <a href="https://scholar.google.com/citations?user=y4dYpPAAAAAJ&hl=en" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6l6 6-6 6"/><path d="M6 12h12"/></svg>
                 Google Scholar
               </a>
-              <a href="https://orcid.org/0000-0001-8020-5791" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);">
+              <a href="https://orcid.org/0000-0002-0820-4476" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-1.698 5.4h1.38c.276 0 .5.224.5.5s-.224.5-.5.5h-1.38c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm-.08 2.7h1.54v10.7h-1.54V8.1zm3.018 0h3.5c3.3 0 4.86 2.22 4.86 5.35 0 3.15-1.56 5.35-4.86 5.35h-3.5V8.1zm1.54 1.4v7.5h1.96c2.12 0 3.32-1.4 3.32-3.75s-1.2-3.75-3.32-3.75h-1.96z"/></svg>
                 ORCID
               </a>
@@ -194,11 +192,11 @@
           </div>
           <div class="scholar-badge" aria-label="Google Scholar metrics">
             <div class="scholar-stats">
-              <div class="s-stat"><span class="s-val">122</span><span class="s-lbl">Citations</span></div>
+              <div class="s-stat"><span class="s-val">133</span><span class="s-lbl">Citations</span></div>
               <div class="scholar-divider" aria-hidden="true"></div>
               <div class="s-stat"><span class="s-val">6</span><span class="s-lbl">h-index</span></div>
               <div class="scholar-divider" aria-hidden="true"></div>
-              <div class="s-stat"><span class="s-val">3</span><span class="s-lbl">i10-index</span></div>
+              <div class="s-stat"><span class="s-val">4</span><span class="s-lbl">i10-index</span></div>
             </div>
           </div>
         </div>
@@ -218,7 +216,7 @@
             <button class="filter-btn" data-filter="preprint">Preprint</button>
           </div>
           <div class="controls-right">
-            <span class="total-count" id="pub-count" aria-live="polite">13 publications</span>
+            <span class="total-count" id="pub-count" aria-live="polite">16 publications</span>
           </div>
         </div>
       </div>
@@ -236,7 +234,54 @@
           <p style="font-size:var(--text-sm);max-width:32ch;">Try selecting a different category above.</p>
         </div>
 
-        <!-- ── 2025 ─────────────────────────────────────────────── -->
+        <!-- ── 2026 ──────────────────────────────────────────────── -->
+        <div class="year-group" data-year="2026">
+          <div class="year-heading">
+            <span class="year-heading-num">2026</span>
+            <div class="year-heading-line" aria-hidden="true"></div>
+            <span class="year-heading-count" aria-label="2 publications in 2026">2</span>
+          </div>
+          <div class="pub-list" role="list">
+
+            <article class="pub-card" role="listitem" data-type="journal">
+              <div class="pub-num" aria-label="Publication 1">1</div>
+              <div>
+                <span class="pub-type-badge badge-journal">Journal</span>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.acorp.2026.100204" target="_blank" rel="noopener noreferrer">Metaphor identification using large language models: A comparison of RAG, prompt engineering, and fine-tuning</a></h3>
+                <p class="pub-authors">Fuoli, M., <strong>Huang, W.</strong>, Littlemore, J., Turner, S., &amp; Wilding, E.</p>
+                <div class="pub-meta-row">
+                  <span class="pub-venue-tag"><em>Applied Corpus Linguistics</em>, 100204 &mdash; E-pub ahead of print</span>
+                  <span class="pub-cites">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    2 citations
+                  </span>
+                </div>
+                <div class="pub-links">
+                  <a href="https://doi.org/10.1016/j.acorp.2026.100204" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
+                  <a href="https://arxiv.org/abs/2509.24866" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-card" role="listitem" data-type="preprint">
+              <div class="pub-num" aria-label="Publication 2">2</div>
+              <div>
+                <span class="pub-type-badge badge-preprint">Preprint</span>
+                <h3 class="pub-title"><a href="https://arxiv.org/abs/2603.10784" target="_blank" rel="noopener noreferrer">Interpretable Chinese Metaphor Identification via LLM-Assisted MIPVU Rule Script Generation: A Comparative Protocol Study</a></h3>
+                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Liu, M.</p>
+                <div class="pub-meta-row">
+                  <span class="pub-venue-tag">arXiv:2603.10784 &mdash; March 2026</span>
+                </div>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/abs/2603.10784" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div><!-- /2026 -->
+
+        <!-- ── 2025 ──────────────────────────────────────────────── -->
         <div class="year-group" data-year="2025">
           <div class="year-heading">
             <span class="year-heading-num">2025</span>
@@ -246,7 +291,7 @@
           <div class="pub-list" role="list">
 
             <article class="pub-card" role="listitem" data-type="journal">
-              <div class="pub-num" aria-label="Publication 1">1</div>
+              <div class="pub-num" aria-label="Publication 3">3</div>
               <div>
                 <span class="pub-type-badge badge-journal">Journal</span>
                 <h3 class="pub-title"><a href="https://doi.org/10.1371/journal.pone.0327081" target="_blank" rel="noopener noreferrer">Attributing authorship via the perplexity of authorial language models</a></h3>
@@ -255,72 +300,50 @@
                   <span class="pub-venue-tag"><em>PLOS ONE</em>, 20(7), e0327081</span>
                   <span class="pub-cites">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    5 citations
+                    6 citations
                   </span>
                 </div>
-                <div class="pub-links" style="margin-top:var(--space-3);">
+                <div class="pub-links">
                   <a href="https://doi.org/10.1371/journal.pone.0327081" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
                 </div>
               </div>
             </article>
 
             <article class="pub-card" role="listitem" data-type="journal">
-              <div class="pub-num" aria-label="Publication 2">2</div>
+              <div class="pub-num" aria-label="Publication 4">4</div>
               <div>
                 <span class="pub-type-badge badge-journal">Journal</span>
-                <h3 class="pub-title"><a href="https://www.frontiersin.org/articles/10.3389/frai.2024.1472411" target="_blank" rel="noopener noreferrer">The sociolinguistic foundations of language modeling</a></h3>
-                <p class="pub-authors">Grieve, J., Bartl, S., Fuoli, M., Grafmiller, J., <strong>Huang, W.</strong>, Jones, K. E., Leivada, E., Murakami, A., &amp; others</p>
+                <h3 class="pub-title"><a href="https://doi.org/10.3389/frai.2024.1472411" target="_blank" rel="noopener noreferrer">The sociolinguistic foundations of language modeling</a></h3>
+                <p class="pub-authors">Grieve, J., Bartl, S., Fuoli, M., Grafmiller, J., <strong>Huang, W.</strong>, Jawerbaum, A., Murakami, A., Perlman, M., Roemling, D., &amp; Winter, B.</p>
                 <div class="pub-meta-row">
                   <span class="pub-venue-tag"><em>Frontiers in Artificial Intelligence</em>, 7, 1472411</span>
                   <span class="pub-cites">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    38 citations
+                    40 citations
                   </span>
                 </div>
-                <div class="pub-links" style="margin-top:var(--space-3);">
-                  <a href="https://www.frontiersin.org/articles/10.3389/frai.2024.1472411" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
+                <div class="pub-links">
+                  <a href="https://doi.org/10.3389/frai.2024.1472411" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
+                  <a href="https://arxiv.org/abs/2407.09241" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
                 </div>
               </div>
             </article>
 
             <article class="pub-card" role="listitem" data-type="preprint">
-              <div class="pub-num" aria-label="Publication 3">3</div>
+              <div class="pub-num" aria-label="Publication 5">5</div>
               <div>
                 <span class="pub-type-badge badge-preprint">Preprint</span>
                 <h3 class="pub-title"><a href="https://arxiv.org/abs/2508.16385" target="_blank" rel="noopener noreferrer">ChatGPT-generated texts show authorship traits that identify them as non-human</a></h3>
-                <p class="pub-authors">Dentella, V., <strong>Huang, W.</strong>, Mansi, S.A., Grieve, J., &amp; Leivada, E.</p>
+                <p class="pub-authors">Dentella, V., <strong>Huang, W.</strong>, Mansi, S. A., Grieve, J., &amp; Leivada, E.</p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag">arXiv:2508.16385</span>
+                  <span class="pub-venue-tag">arXiv:2508.16385 &mdash; August 2025</span>
+                  <span class="pub-cites">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    1 citation
+                  </span>
                 </div>
-                <div class="pub-links" style="margin-top:var(--space-3);">
+                <div class="pub-links">
                   <a href="https://arxiv.org/abs/2508.16385" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="preprint">
-              <div class="pub-num" aria-label="Publication 4">4</div>
-              <div>
-                <span class="pub-type-badge badge-preprint">Preprint</span>
-                <h3 class="pub-title"><a href="https://arxiv.org/abs/2509.24866" target="_blank" rel="noopener noreferrer">Metaphor identification using large language models: A comparison of RAG, prompt engineering, and fine-tuning</a></h3>
-                <p class="pub-authors">Fuoli, M., <strong>Huang, W.</strong>, Littlemore, J., Turner, S., &amp; Wilding, E.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag">arXiv:2509.24866</span>
-                </div>
-                <div class="pub-links" style="margin-top:var(--space-3);">
-                  <a href="https://arxiv.org/abs/2509.24866" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 5">5</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Estimation of Relative Frequency via Large Language Model</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>International Corpus Linguistics Conference</em>, 2025</span>
                 </div>
               </div>
             </article>
@@ -329,10 +352,10 @@
               <div class="pub-num" aria-label="Publication 6">6</div>
               <div>
                 <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Towards a Probabilistic Approach to Large Language Model Perplexity</h3>
+                <h3 class="pub-title">Estimation of Relative Frequency via Large Language Model</h3>
                 <p class="pub-authors"><strong>Huang, W.</strong></p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em>, 2025</span>
+                  <span class="pub-venue-tag"><em>International Corpus Linguistics Conference</em> (CL2025)</span>
                 </div>
               </div>
             </article>
@@ -341,10 +364,22 @@
               <div class="pub-num" aria-label="Publication 7">7</div>
               <div>
                 <span class="pub-type-badge badge-conference">Conference</span>
+                <h3 class="pub-title">Towards a Probabilistic Approach to Large Language Model Perplexity</h3>
+                <p class="pub-authors"><strong>Huang, W.</strong></p>
+                <div class="pub-meta-row">
+                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em> (CLI2025)</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-card" role="listitem" data-type="conference">
+              <div class="pub-num" aria-label="Publication 8">8</div>
+              <div>
+                <span class="pub-type-badge badge-conference">Conference</span>
                 <h3 class="pub-title">Code-switching in Cantonese-English bilingual children: A corpus-based study</h3>
                 <p class="pub-authors">Leivada, E. &amp; <strong>Huang, W.</strong></p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>The International Bilingualism Symposium</em>, 2025</span>
+                  <span class="pub-venue-tag"><em>International Bilingualism Symposium</em> (ISB15), 2025</span>
                 </div>
               </div>
             </article>
@@ -352,51 +387,49 @@
           </div>
         </div><!-- /2025 -->
 
-        <!-- ── 2024 ─────────────────────────────────────────────── -->
+        <!-- ── 2024 ──────────────────────────────────────────────── -->
         <div class="year-group" data-year="2024">
           <div class="year-heading">
             <span class="year-heading-num">2024</span>
             <div class="year-heading-line" aria-hidden="true"></div>
-            <span class="year-heading-count" aria-label="4 publications in 2024">4</span>
+            <span class="year-heading-count" aria-label="5 publications in 2024">5</span>
           </div>
           <div class="pub-list" role="list">
 
             <article class="pub-card" role="listitem" data-type="workshop">
-              <div class="pub-num" aria-label="Publication 8">8</div>
+              <div class="pub-num" aria-label="Publication 9">9</div>
               <div>
                 <span class="pub-type-badge badge-workshop">Workshop</span>
-                <h3 class="pub-title">Authorial language models for AI authorship verification</h3>
+                <h3 class="pub-title"><a href="https://ceur-ws.org/Vol-3740/paper-245.pdf" target="_blank" rel="noopener noreferrer">Authorial Language Models for AI Authorship Verification</a></h3>
                 <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag">CEUR Workshop Proceedings 3740 &mdash; CLEF 2024 (PAN)</span>
+                  <span class="pub-venue-tag">CEUR Workshop Proceedings 3740, pp.&nbsp;2645&ndash;2652 &mdash; PAN@CLEF 2024</span>
                   <span class="pub-cites">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     7 citations
                   </span>
                 </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 9">9</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Using LLM Perplexity as a Measure of Relative Frequency</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em>, 2024</span>
+                <div class="pub-links">
+                  <a href="https://ceur-ws.org/Vol-3740/paper-245.pdf" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; PDF</a>
                 </div>
               </div>
             </article>
 
-            <article class="pub-card" role="listitem" data-type="conference">
+            <article class="pub-card" role="listitem" data-type="preprint">
               <div class="pub-num" aria-label="Publication 10">10</div>
               <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Phylogenetic origin of Tanka language variety</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
+                <span class="pub-type-badge badge-preprint">Preprint</span>
+                <h3 class="pub-title"><a href="https://arxiv.org/abs/2401.12005" target="_blank" rel="noopener noreferrer">ALMs: Authorial Language Models for Authorship Attribution</a></h3>
+                <p class="pub-authors"><strong>Huang, W.</strong>, Murakami, A., &amp; Grieve, J.</p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Methods in Dialectology</em>, 2024</span>
+                  <span class="pub-venue-tag">arXiv:2401.12005 &mdash; January 2024</span>
+                  <span class="pub-cites">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    9 citations
+                  </span>
+                </div>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/abs/2401.12005" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
                 </div>
               </div>
             </article>
@@ -405,10 +438,34 @@
               <div class="pub-num" aria-label="Publication 11">11</div>
               <div>
                 <span class="pub-type-badge badge-conference">Conference</span>
+                <h3 class="pub-title">Using LLM Perplexity as a Measure of Relative Frequency</h3>
+                <p class="pub-authors"><strong>Huang, W.</strong></p>
+                <div class="pub-meta-row">
+                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em> (CLI2024)</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-card" role="listitem" data-type="conference">
+              <div class="pub-num" aria-label="Publication 12">12</div>
+              <div>
+                <span class="pub-type-badge badge-conference">Conference</span>
+                <h3 class="pub-title">Phylogenetic Origin of Tanka Language Variety</h3>
+                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
+                <div class="pub-meta-row">
+                  <span class="pub-venue-tag"><em>Methods in Dialectology</em> XV, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-card" role="listitem" data-type="conference">
+              <div class="pub-num" aria-label="Publication 13">13</div>
+              <div>
+                <span class="pub-type-badge badge-conference">Conference</span>
                 <h3 class="pub-title">Using LLM Perplexity to Measure Relative Lexical Frequency in Forensic Authorship Analysis</h3>
                 <p class="pub-authors"><strong>Huang, W.</strong></p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Forensic Linguistics Symposium</em>, 2024</span>
+                  <span class="pub-venue-tag"><em>Forensic Linguistics Symposium</em> (IAFL 2024)</span>
                 </div>
               </div>
             </article>
@@ -416,7 +473,7 @@
           </div>
         </div><!-- /2024 -->
 
-        <!-- ── 2023 ─────────────────────────────────────────────── -->
+        <!-- ── 2023 ──────────────────────────────────────────────── -->
         <div class="year-group" data-year="2023">
           <div class="year-heading">
             <span class="year-heading-num">2023</span>
@@ -426,13 +483,13 @@
           <div class="pub-list" role="list">
 
             <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 12">12</div>
+              <div class="pub-num" aria-label="Publication 14">14</div>
               <div>
                 <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Attribution of unknown texts using perplexity-based authorial language models</h3>
+                <h3 class="pub-title">Attribution of Unknown Texts Using Perplexity-Based Authorial Language Models</h3>
                 <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em>, 2023</span>
+                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em> (CLI2023)</span>
                   <span class="pub-cites">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     5 citations
@@ -442,19 +499,46 @@
             </article>
 
             <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 13">13</div>
+              <div class="pub-num" aria-label="Publication 15">15</div>
               <div>
                 <span class="pub-type-badge badge-conference">Conference</span>
                 <h3 class="pub-title">Using LLM Perplexity as a Measure of Language Distance</h3>
                 <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
                 <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Methods in Dialectology</em>, 2023</span>
+                  <span class="pub-venue-tag"><em>Methods in Dialectology</em> XIV, 2023</span>
                 </div>
               </div>
             </article>
 
           </div>
         </div><!-- /2023 -->
+
+        <!-- ── 2020 ──────────────────────────────────────────────── -->
+        <div class="year-group" data-year="2020">
+          <div class="year-heading">
+            <span class="year-heading-num">2020</span>
+            <div class="year-heading-line" aria-hidden="true"></div>
+            <span class="year-heading-count" aria-label="1 publication in 2020">1</span>
+          </div>
+          <div class="pub-list" role="list">
+
+            <article class="pub-card" role="listitem" data-type="preprint">
+              <div class="pub-num" aria-label="Publication 16">16</div>
+              <div>
+                <span class="pub-type-badge badge-preprint">Preprint</span>
+                <h3 class="pub-title"><a href="https://doi.org/10.20944/preprints202009.0393.v1" target="_blank" rel="noopener noreferrer">Seeking Gender Difference in Code-Switching by Investigating Mandarin-English Child Bilingual in Singapore</a></h3>
+                <p class="pub-authors"><strong>Huang, W.</strong>, Lyu, D., &amp; Lin, J.</p>
+                <div class="pub-meta-row">
+                  <span class="pub-venue-tag">Preprints.org &mdash; September 2020</span>
+                </div>
+                <div class="pub-links">
+                  <a href="https://doi.org/10.20944/preprints202009.0393.v1" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Preprint</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div><!-- /2020 -->
 
       </div>
     </section>
