@@ -4,21 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications — Weihang Huang</title>
-  <meta name="description" content="Full list of publications by Weihang Huang: journal articles, conference papers, workshop proceedings, and preprints in computational linguistics, NLP, and authorship attribution." />
-  <meta property="og:title" content="Publications — Weihang Huang" />
-  <meta property="og:description" content="Full publication list of Weihang Huang, PhD candidate at the University of Birmingham." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://weihang-huang.github.io/publications.html" />
+  <meta name="description" content="Full publications list for Weihang Huang — journal articles, workshop papers, and preprints in authorship attribution, LLMs, corpus linguistics, and metaphor identification." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
   <style>
-    /* ── DESIGN TOKENS (identical to index.html) ─────────────────── */
     :root,[data-theme="light"]{--color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-surface-offset:#f3f0ec;--color-surface-offset-2:#edeae5;--color-surface-dynamic:#e6e4df;--color-divider:#dcd9d5;--color-border:#d4d1ca;--color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;--color-text-inverse:#f9f8f4;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-active:#0f3638;--color-primary-highlight:#cedcd8;--shadow-sm:0 1px 2px oklch(0.2 0.01 80/0.06);--shadow-md:0 4px 12px oklch(0.2 0.01 80/0.08);--shadow-lg:0 12px 32px oklch(0.2 0.01 80/0.12);--radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-xl:1rem;--radius-full:9999px;--transition-interactive:180ms cubic-bezier(0.16,1,0.3,1);--font-display:'Instrument Serif',Georgia,serif;--font-body:'Work Sans','Helvetica Neue',sans-serif;--text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);--text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);--text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);--text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);--text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);--text-3xl:clamp(2.5rem,1rem + 4vw,5rem);--space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;--content-narrow:640px;--content-default:960px;--content-wide:1200px}
     [data-theme="dark"]{--color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;--color-surface-offset:#1d1c1a;--color-surface-offset-2:#22211f;--color-surface-dynamic:#2d2c2a;--color-divider:#262523;--color-border:#393836;--color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;--color-text-inverse:#2b2a28;--color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-primary-active:#1a626b;--color-primary-highlight:#313b3b;--shadow-sm:0 1px 2px oklch(0 0 0/0.2);--shadow-md:0 4px 12px oklch(0 0 0/0.3);--shadow-lg:0 12px 32px oklch(0 0 0/0.4)}
     @media(prefers-color-scheme:dark){:root:not([data-theme]){--color-bg:#171614;--color-surface:#1c1b19;--color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;--color-text-inverse:#2b2a28;--color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-primary-highlight:#313b3b;--color-divider:#262523;--color-border:#393836;--color-surface-offset:#1d1c1a;--color-surface-dynamic:#2d2c2a}}
-
-    /* ── BASE ─────────────────────────────────────────────────────── */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{-webkit-text-size-adjust:none;text-size-adjust:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:var(--space-16)}
     body{min-height:100dvh;line-height:1.6;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background-color:var(--color-bg);transition:background-color 250ms ease,color 250ms ease}
@@ -34,7 +27,7 @@
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
     .container{max-width:var(--content-default);margin-inline:auto;padding-inline:var(--space-6)}
 
-    /* ── NAV ──────────────────────────────────────────────────────── */
+    /* NAV — identical to index.html */
     .site-nav{position:sticky;top:0;z-index:100;background:oklch(from var(--color-bg) l c h/0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid oklch(from var(--color-text) l c h/0.08)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:var(--space-4)}
     .nav-logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:var(--color-text)}
@@ -49,85 +42,81 @@
     .nav-hamburger{display:none;background:none;border:none;cursor:pointer;color:var(--color-text);padding:var(--space-2);min-width:44px;min-height:44px;align-items:center;justify-content:center;border-radius:var(--radius-md)}
     @media(max-width:768px){.nav-hamburger{display:flex}.nav-links{display:none;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:var(--color-surface);border-bottom:1px solid var(--color-divider);padding:var(--space-4) var(--space-6)}.nav-links.open{display:flex}.nav-links li{width:100%}.nav-links a{display:block;padding:var(--space-3) 0;font-size:var(--text-base)}}
 
-    /* ── PAGE HERO ────────────────────────────────────────────────── */
-    .page-hero{background:var(--color-surface);border-bottom:1px solid var(--color-divider);padding-block:clamp(var(--space-12),7vw,var(--space-20))}
-    .page-hero-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--space-8);flex-wrap:wrap}
-    .section-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-3)}
+    /* PAGE HEADER */
+    .page-header{background:var(--color-surface);padding-block:clamp(var(--space-12),8vw,var(--space-20));border-bottom:1px solid var(--color-divider)}
+    .page-header-inner{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:var(--space-6)}
+    .page-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-3)}
     .page-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em;line-height:1.1;margin-bottom:var(--space-4)}
-    .page-lead{font-size:var(--text-base);color:var(--color-text-muted);max-width:55ch;line-height:1.7}
-    .scholar-badge{display:inline-flex;align-items:center;gap:var(--space-3);padding:var(--space-4) var(--space-5);border-radius:var(--radius-lg);border:1px solid oklch(from var(--color-text) l c h/0.1);background:var(--color-surface-2);box-shadow:var(--shadow-sm);flex-shrink:0}
-    .scholar-stats{display:flex;gap:var(--space-6)}
-    .s-stat{display:flex;flex-direction:column;align-items:center}
-    .s-val{font-family:var(--font-display);font-size:var(--text-xl);color:var(--color-text);letter-spacing:-.02em;line-height:1}
-    .s-lbl{font-size:var(--text-xs);color:var(--color-text-muted);margin-top:var(--space-1)}
-    .scholar-divider{width:1px;background:var(--color-divider);align-self:stretch}
-    @media(max-width:640px){.scholar-badge{display:none}}
+    .page-lead{font-size:var(--text-base);color:var(--color-text-muted);max-width:56ch;line-height:1.7}
+    .scholar-badge{display:inline-flex;align-items:center;gap:var(--space-3);background:var(--color-surface-2);border:1px solid oklch(from var(--color-text) l c h/0.08);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);box-shadow:var(--shadow-sm);white-space:nowrap}
+    .scholar-stat{display:flex;flex-direction:column;align-items:center;gap:2px}
+    .scholar-val{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em}
+    .scholar-lbl{font-size:var(--text-xs);color:var(--color-text-muted)}
+    .scholar-sep{width:1px;height:2.5rem;background:var(--color-divider)}
 
-    /* ── FILTER / CONTROLS ────────────────────────────────────────── */
-    .controls{background:var(--color-bg);border-bottom:1px solid var(--color-divider);padding-block:var(--space-4);position:sticky;top:65px;z-index:50}
-    .controls-inner{display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap}
-    .filter-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-muted);margin-right:var(--space-2)}
-    .filter-btn{font-size:var(--text-xs);font-weight:600;padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);border:1px solid oklch(from var(--color-text) l c h/0.15);background:transparent;color:var(--color-text-muted);cursor:pointer;min-height:36px;letter-spacing:.03em}
-    .filter-btn:hover{border-color:var(--color-primary);color:var(--color-primary)}
+    /* FILTER BAR */
+    .filter-bar{padding-block:var(--space-6);border-bottom:1px solid var(--color-divider);background:var(--color-bg);position:sticky;top:calc(var(--space-16) + 4px);z-index:50;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+    .filter-inner{display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap}
+    .filter-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-muted);margin-right:var(--space-2)}
+    .filter-btn{font-size:var(--text-xs);font-weight:600;padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);cursor:pointer;border:1px solid oklch(from var(--color-text) l c h/0.15);background:transparent;color:var(--color-text-muted);letter-spacing:.02em;transition:all var(--transition-interactive)}
+    .filter-btn:hover{color:var(--color-text);border-color:oklch(from var(--color-text) l c h/0.35);background:var(--color-surface-offset)}
     .filter-btn.active{background:var(--color-primary);color:var(--color-text-inverse);border-color:var(--color-primary)}
-    .controls-right{margin-left:auto;display:flex;align-items:center;gap:var(--space-2)}
-    .total-count{font-size:var(--text-xs);color:var(--color-text-faint);font-variant-numeric:tabular-nums}
 
-    /* ── PUBLICATIONS BODY ────────────────────────────────────────── */
-    .pubs-body{padding-block:clamp(var(--space-8),5vw,var(--space-16))}
+    /* MAIN CONTENT */
+    main{padding-block:var(--space-12)}
 
-    .year-group{margin-bottom:var(--space-12)}
-    .year-group:last-child{margin-bottom:0}
-    .year-heading{display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-6)}
-    .year-heading-num{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em}
-    .year-heading-line{flex:1;height:1px;background:var(--color-divider)}
-    .year-heading-count{font-size:var(--text-xs);color:var(--color-text-faint);font-variant-numeric:tabular-nums}
+    /* YEAR SECTION */
+    .year-section{margin-bottom:var(--space-12)}
+    .year-heading{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em;margin-bottom:var(--space-6);padding-bottom:var(--space-3);border-bottom:2px solid var(--color-primary)}
 
-    .pub-list{display:flex;flex-direction:column;gap:0}
-    .pub-card{display:grid;grid-template-columns:3rem 1fr;gap:var(--space-5);align-items:start;padding:var(--space-5) 0;border-bottom:1px solid var(--color-divider)}
+    /* PUB CARD */
+    .pub-card{display:grid;grid-template-columns:auto 1fr;gap:var(--space-5);align-items:start;padding:var(--space-6) 0;border-bottom:1px solid var(--color-divider)}
     .pub-card:last-child{border-bottom:none}
-    .pub-card[data-hidden="true"]{display:none}
-    .pub-num{font-size:var(--text-xs);color:var(--color-text-faint);font-variant-numeric:tabular-nums;padding-top:.2em;text-align:right}
-    .pub-type-badge{display:inline-flex;align-items:center;gap:4px;font-size:var(--text-xs);font-weight:600;letter-spacing:.04em;padding:2px var(--space-2);border-radius:var(--radius-full);margin-bottom:var(--space-2)}
-    .badge-journal{background:color-mix(in oklch,var(--color-primary) 12%,var(--color-bg));color:var(--color-primary)}
-    .badge-conference{background:color-mix(in oklch,#006494 12%,var(--color-bg));color:#006494}
-    [data-theme="dark"] .badge-conference{background:color-mix(in oklch,#5591c7 15%,var(--color-bg));color:#5591c7}
-    .badge-preprint{background:color-mix(in oklch,#d19900 12%,var(--color-bg));color:#7a5800}
-    [data-theme="dark"] .badge-preprint{background:color-mix(in oklch,#e8af34 15%,var(--color-bg));color:#e8af34}
-    .badge-workshop{background:color-mix(in oklch,#7a39bb 12%,var(--color-bg));color:#7a39bb}
-    [data-theme="dark"] .badge-workshop{background:color-mix(in oklch,#a86fdf 15%,var(--color-bg));color:#a86fdf}
-    .pub-title{font-family:var(--font-display);font-size:var(--text-base);color:var(--color-text);line-height:1.45;margin-bottom:var(--space-2);font-weight:400;max-width:none}
-    .pub-title a{color:inherit;text-decoration:none}
-    .pub-title a:hover{color:var(--color-primary);text-decoration:underline}
-    .pub-authors{font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:var(--space-2);max-width:none;line-height:1.5}
-    .pub-authors strong{color:var(--color-text)}
-    .pub-meta-row{display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-2) var(--space-3);margin-top:var(--space-2)}
-    .pub-venue-tag{display:inline-flex;align-items:center;font-size:var(--text-xs);color:var(--color-text-muted);background:var(--color-surface-offset);padding:2px var(--space-2);border-radius:var(--radius-full);max-width:none}
-    .pub-venue-tag em{font-style:italic}
+    .pub-type-badge{display:flex;flex-direction:column;align-items:center;gap:var(--space-2);min-width:52px;padding-top:.1em}
+    .pub-type-icon{width:36px;height:36px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .pub-type-icon.journal{background:color-mix(in oklch,var(--color-primary) 12%,var(--color-surface));color:var(--color-primary)}
+    .pub-type-icon.workshop{background:color-mix(in oklch,var(--color-gold,#d19900) 12%,var(--color-surface));color:var(--color-gold,#d19900)}
+    .pub-type-icon.preprint{background:color-mix(in oklch,var(--color-text) 8%,var(--color-surface));color:var(--color-text-muted)}
+    .pub-type-icon.proceedings{background:color-mix(in oklch,var(--color-blue,#006494) 12%,var(--color-surface));color:var(--color-blue,#006494)}
+    .pub-type-label{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-faint);text-align:center;line-height:1.2}
+    .pub-body{}
+    .pub-title{font-family:var(--font-display);font-size:var(--text-base);color:var(--color-text);line-height:1.4;margin-bottom:var(--space-2);font-weight:400;max-width:none;font-style:italic}
+    .pub-authors{font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);max-width:none;line-height:1.5}
+    .pub-authors strong{color:var(--color-text);font-weight:600}
+    .pub-meta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2) var(--space-4);margin-bottom:var(--space-3)}
+    .pub-venue{display:inline-flex;align-items:center;font-size:var(--text-xs);color:var(--color-text-muted);background:var(--color-surface-offset);padding:2px var(--space-3);border-radius:var(--radius-full);font-weight:500}
+    .pub-status{display:inline-flex;align-items:center;font-size:var(--text-xs);color:var(--color-primary);background:var(--color-primary-highlight);padding:2px var(--space-3);border-radius:var(--radius-full);font-weight:600}
     .pub-cites{display:inline-flex;align-items:center;gap:var(--space-1);font-size:var(--text-xs);color:var(--color-text-faint)}
-    .pub-cites svg{flex-shrink:0}
-    .pub-links{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-3)}
-    .pub-link{font-size:var(--text-xs);font-weight:600;color:var(--color-primary);text-decoration:none;display:inline-flex;align-items:center;gap:4px;padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);border:1px solid oklch(from var(--color-primary) l c h/0.3)}
-    .pub-link:hover{background:var(--color-primary-highlight);border-color:var(--color-primary)}
+    .pub-links{display:flex;gap:var(--space-4);flex-wrap:wrap}
+    .pub-link{font-size:var(--text-xs);font-weight:600;color:var(--color-primary);text-decoration:none;display:inline-flex;align-items:center;gap:4px;padding:var(--space-1) var(--space-3);border:1px solid var(--color-primary-highlight);border-radius:var(--radius-full);background:transparent}
+    .pub-link:hover{background:var(--color-primary-highlight);color:var(--color-primary-hover)}
+    @media(max-width:600px){.pub-card{grid-template-columns:1fr}.pub-type-badge{flex-direction:row;justify-content:flex-start;margin-bottom:var(--space-2)}.pub-type-label{display:none}}
 
-    /* ── EMPTY STATE ─────────────────────────────────────────────── */
-    .empty-state{display:none;flex-direction:column;align-items:center;text-align:center;padding:var(--space-16) var(--space-8);color:var(--color-text-muted)}
-    .empty-state.visible{display:flex}
-    .empty-state svg{color:var(--color-text-faint);margin-bottom:var(--space-4)}
-    .empty-state h3{font-size:var(--text-base);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2)}
+    /* COUNT CHIP */
+    .section-count{font-size:var(--text-xs);font-weight:600;color:var(--color-text-faint);letter-spacing:.04em;margin-left:var(--space-3)}
 
-    /* ── BUTTONS ─────────────────────────────────────────────────── */
-    .btn{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;padding:var(--space-3) var(--space-5);border-radius:var(--radius-md);text-decoration:none;cursor:pointer;border:none;letter-spacing:.01em;min-height:44px}
-    .btn-outline{background:transparent;color:var(--color-text);border:1px solid oklch(from var(--color-text) l c h/0.2)}
-    .btn-outline:hover{background:var(--color-surface-offset);border-color:oklch(from var(--color-text) l c h/0.35)}
+    /* EMPTY STATE */
+    .empty-state{text-align:center;padding:var(--space-16) var(--space-8);color:var(--color-text-muted)}
+    .empty-state p{font-size:var(--text-sm);margin-top:var(--space-3)}
 
-    /* ── FOOTER ──────────────────────────────────────────────────── */
+    /* FOOTER */
     footer{background:var(--color-surface-offset);border-top:1px solid var(--color-divider);padding-block:var(--space-8)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4)}
     .footer-copy{font-size:var(--text-xs);color:var(--color-text-faint)}
     .footer-links{display:flex;gap:var(--space-5)}
     .footer-links a{font-size:var(--text-xs);color:var(--color-text-faint);text-decoration:none}
     .footer-links a:hover{color:var(--color-text-muted)}
+
+    /* CONTACT STRIP */
+    .contact-strip{background:color-mix(in oklch,var(--color-primary) 8%,var(--color-surface));border-top:1px solid var(--color-divider);padding-block:clamp(var(--space-10),5vw,var(--space-16))}
+    .contact-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-6)}
+    .contact-text h2{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);margin-bottom:var(--space-2)}
+    .contact-text p{font-size:var(--text-sm);color:var(--color-text-muted);max-width:46ch}
+    .contact-links{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+    .contact-link{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);text-decoration:none;padding:var(--space-2) var(--space-4);border:1px solid oklch(from var(--color-text) l c h/0.15);border-radius:var(--radius-md);background:var(--color-surface);min-height:44px}
+    .contact-link:hover{color:var(--color-primary);border-color:var(--color-primary);background:var(--color-primary-highlight)}
+    .contact-link.primary{background:var(--color-primary);color:var(--color-text-inverse);border-color:var(--color-primary);font-weight:600}
+    .contact-link.primary:hover{background:var(--color-primary-hover);border-color:var(--color-primary-hover);color:var(--color-text-inverse)}
   </style>
 </head>
 <body>
@@ -168,382 +157,270 @@
     </div>
   </nav>
 
-  <main id="main">
-
-    <!-- PAGE HERO -->
-    <header class="page-hero">
-      <div class="container">
-        <div class="page-hero-inner">
-          <div>
-            <p class="section-label">Scholarship</p>
-            <h1 class="page-title">Publications</h1>
-            <p class="page-lead">Journal articles, conference &amp; workshop papers, and preprints in computational linguistics, authorship attribution, and NLP. Citation counts sourced from Google Scholar.</p>
-            <div style="margin-top:var(--space-6);display:flex;gap:var(--space-3);flex-wrap:wrap;">
-              <a href="https://scholar.google.com/citations?user=y4dYpPAAAAAJ&hl=en" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6l6 6-6 6"/><path d="M6 12h12"/></svg>
-                Google Scholar
-              </a>
-              <a href="https://orcid.org/0000-0002-0820-4476" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-1.698 5.4h1.38c.276 0 .5.224.5.5s-.224.5-.5.5h-1.38c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm-.08 2.7h1.54v10.7h-1.54V8.1zm3.018 0h3.5c3.3 0 4.86 2.22 4.86 5.35 0 3.15-1.56 5.35-4.86 5.35h-3.5V8.1zm1.54 1.4v7.5h1.96c2.12 0 3.32-1.4 3.32-3.75s-1.2-3.75-3.32-3.75h-1.96z"/></svg>
-                ORCID
-              </a>
-              <a href="https://arxiv.org/search/?searchtype=author&query=Huang%2C+Weihang" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);">arXiv</a>
-            </div>
-          </div>
-          <div class="scholar-badge" aria-label="Google Scholar metrics">
-            <div class="scholar-stats">
-              <div class="s-stat"><span class="s-val">133</span><span class="s-lbl">Citations</span></div>
-              <div class="scholar-divider" aria-hidden="true"></div>
-              <div class="s-stat"><span class="s-val">6</span><span class="s-lbl">h-index</span></div>
-              <div class="scholar-divider" aria-hidden="true"></div>
-              <div class="s-stat"><span class="s-val">4</span><span class="s-lbl">i10-index</span></div>
-            </div>
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <div>
+          <p class="page-label">Scholarship</p>
+          <h1 class="page-title">Publications</h1>
+          <p class="page-lead">Journal articles, workshop papers, and preprints in authorship attribution, large language models, corpus linguistics, and metaphor identification. My name is <strong>bolded</strong> in each author list.</p>
+          <div style="margin-top:var(--space-5);display:flex;gap:var(--space-4);flex-wrap:wrap;align-items:center;">
+            <a href="https://scholar.google.com/citations?user=y4dYpPAAAAAJ&hl=en" class="contact-link" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);">&#x2197; Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-0820-4476" class="contact-link" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);">&#x2197; ORCID</a>
           </div>
         </div>
-      </div>
-    </header>
-
-    <!-- FILTER CONTROLS -->
-    <div class="controls" role="navigation" aria-label="Filter publications">
-      <div class="container">
-        <div class="controls-inner">
-          <span class="filter-label" id="filter-label">Filter</span>
-          <div role="group" aria-labelledby="filter-label" style="display:flex;gap:var(--space-2);flex-wrap:wrap;">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="journal">Journal</button>
-            <button class="filter-btn" data-filter="conference">Conference</button>
-            <button class="filter-btn" data-filter="workshop">Workshop</button>
-            <button class="filter-btn" data-filter="preprint">Preprint</button>
-          </div>
-          <div class="controls-right">
-            <span class="total-count" id="pub-count" aria-live="polite">16 publications</span>
-          </div>
+        <div class="scholar-badge" aria-label="Google Scholar citation metrics">
+          <div class="scholar-stat"><span class="scholar-val">133</span><span class="scholar-lbl">Citations</span></div>
+          <div class="scholar-sep"></div>
+          <div class="scholar-stat"><span class="scholar-val">6</span><span class="scholar-lbl">h-index</span></div>
+          <div class="scholar-sep"></div>
+          <div class="scholar-stat"><span class="scholar-val">3</span><span class="scholar-lbl">i10-index</span></div>
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- PUBLICATIONS LIST -->
-    <section class="pubs-body" aria-labelledby="pubs-main-heading">
-      <div class="container">
-        <h2 id="pubs-main-heading" class="sr-only">Full publication list</h2>
-
-        <!-- EMPTY STATE -->
-        <div class="empty-state" id="empty-state" role="status" aria-live="polite">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          <h3>No publications match this filter</h3>
-          <p style="font-size:var(--text-sm);max-width:32ch;">Try selecting a different category above.</p>
-        </div>
-
-        <!-- ── 2026 ──────────────────────────────────────────────── -->
-        <div class="year-group" data-year="2026">
-          <div class="year-heading">
-            <span class="year-heading-num">2026</span>
-            <div class="year-heading-line" aria-hidden="true"></div>
-            <span class="year-heading-count" aria-label="2 publications in 2026">2</span>
-          </div>
-          <div class="pub-list" role="list">
-
-            <article class="pub-card" role="listitem" data-type="journal">
-              <div class="pub-num" aria-label="Publication 1">1</div>
-              <div>
-                <span class="pub-type-badge badge-journal">Journal</span>
-                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.acorp.2026.100204" target="_blank" rel="noopener noreferrer">Metaphor identification using large language models: A comparison of RAG, prompt engineering, and fine-tuning</a></h3>
-                <p class="pub-authors">Fuoli, M., <strong>Huang, W.</strong>, Littlemore, J., Turner, S., &amp; Wilding, E.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Applied Corpus Linguistics</em>, 100204 &mdash; E-pub ahead of print</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    2 citations
-                  </span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://doi.org/10.1016/j.acorp.2026.100204" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
-                  <a href="https://arxiv.org/abs/2509.24866" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="preprint">
-              <div class="pub-num" aria-label="Publication 2">2</div>
-              <div>
-                <span class="pub-type-badge badge-preprint">Preprint</span>
-                <h3 class="pub-title"><a href="https://arxiv.org/abs/2603.10784" target="_blank" rel="noopener noreferrer">Interpretable Chinese Metaphor Identification via LLM-Assisted MIPVU Rule Script Generation: A Comparative Protocol Study</a></h3>
-                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Liu, M.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag">arXiv:2603.10784 &mdash; March 2026</span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://arxiv.org/abs/2603.10784" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div><!-- /2026 -->
-
-        <!-- ── 2025 ──────────────────────────────────────────────── -->
-        <div class="year-group" data-year="2025">
-          <div class="year-heading">
-            <span class="year-heading-num">2025</span>
-            <div class="year-heading-line" aria-hidden="true"></div>
-            <span class="year-heading-count" aria-label="7 publications in 2025">7</span>
-          </div>
-          <div class="pub-list" role="list">
-
-            <article class="pub-card" role="listitem" data-type="journal">
-              <div class="pub-num" aria-label="Publication 3">3</div>
-              <div>
-                <span class="pub-type-badge badge-journal">Journal</span>
-                <h3 class="pub-title"><a href="https://doi.org/10.1371/journal.pone.0327081" target="_blank" rel="noopener noreferrer">Attributing authorship via the perplexity of authorial language models</a></h3>
-                <p class="pub-authors"><strong>Huang, W.</strong>, Murakami, A., &amp; Grieve, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>PLOS ONE</em>, 20(7), e0327081</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    6 citations
-                  </span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://doi.org/10.1371/journal.pone.0327081" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="journal">
-              <div class="pub-num" aria-label="Publication 4">4</div>
-              <div>
-                <span class="pub-type-badge badge-journal">Journal</span>
-                <h3 class="pub-title"><a href="https://doi.org/10.3389/frai.2024.1472411" target="_blank" rel="noopener noreferrer">The sociolinguistic foundations of language modeling</a></h3>
-                <p class="pub-authors">Grieve, J., Bartl, S., Fuoli, M., Grafmiller, J., <strong>Huang, W.</strong>, Jawerbaum, A., Murakami, A., Perlman, M., Roemling, D., &amp; Winter, B.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Frontiers in Artificial Intelligence</em>, 7, 1472411</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    40 citations
-                  </span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://doi.org/10.3389/frai.2024.1472411" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Journal</a>
-                  <a href="https://arxiv.org/abs/2407.09241" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="preprint">
-              <div class="pub-num" aria-label="Publication 5">5</div>
-              <div>
-                <span class="pub-type-badge badge-preprint">Preprint</span>
-                <h3 class="pub-title"><a href="https://arxiv.org/abs/2508.16385" target="_blank" rel="noopener noreferrer">ChatGPT-generated texts show authorship traits that identify them as non-human</a></h3>
-                <p class="pub-authors">Dentella, V., <strong>Huang, W.</strong>, Mansi, S. A., Grieve, J., &amp; Leivada, E.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag">arXiv:2508.16385 &mdash; August 2025</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    1 citation
-                  </span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://arxiv.org/abs/2508.16385" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 6">6</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Estimation of Relative Frequency via Large Language Model</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>International Corpus Linguistics Conference</em> (CL2025)</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 7">7</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Towards a Probabilistic Approach to Large Language Model Perplexity</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em> (CLI2025)</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 8">8</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Code-switching in Cantonese-English bilingual children: A corpus-based study</h3>
-                <p class="pub-authors">Leivada, E. &amp; <strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>International Bilingualism Symposium</em> (ISB15), 2025</span>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div><!-- /2025 -->
-
-        <!-- ── 2024 ──────────────────────────────────────────────── -->
-        <div class="year-group" data-year="2024">
-          <div class="year-heading">
-            <span class="year-heading-num">2024</span>
-            <div class="year-heading-line" aria-hidden="true"></div>
-            <span class="year-heading-count" aria-label="5 publications in 2024">5</span>
-          </div>
-          <div class="pub-list" role="list">
-
-            <article class="pub-card" role="listitem" data-type="workshop">
-              <div class="pub-num" aria-label="Publication 9">9</div>
-              <div>
-                <span class="pub-type-badge badge-workshop">Workshop</span>
-                <h3 class="pub-title"><a href="https://ceur-ws.org/Vol-3740/paper-245.pdf" target="_blank" rel="noopener noreferrer">Authorial Language Models for AI Authorship Verification</a></h3>
-                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag">CEUR Workshop Proceedings 3740, pp.&nbsp;2645&ndash;2652 &mdash; PAN@CLEF 2024</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    7 citations
-                  </span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://ceur-ws.org/Vol-3740/paper-245.pdf" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; PDF</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="preprint">
-              <div class="pub-num" aria-label="Publication 10">10</div>
-              <div>
-                <span class="pub-type-badge badge-preprint">Preprint</span>
-                <h3 class="pub-title"><a href="https://arxiv.org/abs/2401.12005" target="_blank" rel="noopener noreferrer">ALMs: Authorial Language Models for Authorship Attribution</a></h3>
-                <p class="pub-authors"><strong>Huang, W.</strong>, Murakami, A., &amp; Grieve, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag">arXiv:2401.12005 &mdash; January 2024</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    9 citations
-                  </span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://arxiv.org/abs/2401.12005" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 11">11</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Using LLM Perplexity as a Measure of Relative Frequency</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em> (CLI2024)</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 12">12</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Phylogenetic Origin of Tanka Language Variety</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Methods in Dialectology</em> XV, 2024</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 13">13</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Using LLM Perplexity to Measure Relative Lexical Frequency in Forensic Authorship Analysis</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong></p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Forensic Linguistics Symposium</em> (IAFL 2024)</span>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div><!-- /2024 -->
-
-        <!-- ── 2023 ──────────────────────────────────────────────── -->
-        <div class="year-group" data-year="2023">
-          <div class="year-heading">
-            <span class="year-heading-num">2023</span>
-            <div class="year-heading-line" aria-hidden="true"></div>
-            <span class="year-heading-count" aria-label="2 publications in 2023">2</span>
-          </div>
-          <div class="pub-list" role="list">
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 14">14</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Attribution of Unknown Texts Using Perplexity-Based Authorial Language Models</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Corpus Linguistics International</em> (CLI2023)</span>
-                  <span class="pub-cites">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    5 citations
-                  </span>
-                </div>
-              </div>
-            </article>
-
-            <article class="pub-card" role="listitem" data-type="conference">
-              <div class="pub-num" aria-label="Publication 15">15</div>
-              <div>
-                <span class="pub-type-badge badge-conference">Conference</span>
-                <h3 class="pub-title">Using LLM Perplexity as a Measure of Language Distance</h3>
-                <p class="pub-authors"><strong>Huang, W.</strong> &amp; Grieve, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag"><em>Methods in Dialectology</em> XIV, 2023</span>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div><!-- /2023 -->
-
-        <!-- ── 2020 ──────────────────────────────────────────────── -->
-        <div class="year-group" data-year="2020">
-          <div class="year-heading">
-            <span class="year-heading-num">2020</span>
-            <div class="year-heading-line" aria-hidden="true"></div>
-            <span class="year-heading-count" aria-label="1 publication in 2020">1</span>
-          </div>
-          <div class="pub-list" role="list">
-
-            <article class="pub-card" role="listitem" data-type="preprint">
-              <div class="pub-num" aria-label="Publication 16">16</div>
-              <div>
-                <span class="pub-type-badge badge-preprint">Preprint</span>
-                <h3 class="pub-title"><a href="https://doi.org/10.20944/preprints202009.0393.v1" target="_blank" rel="noopener noreferrer">Seeking Gender Difference in Code-Switching by Investigating Mandarin-English Child Bilingual in Singapore</a></h3>
-                <p class="pub-authors"><strong>Huang, W.</strong>, Lyu, D., &amp; Lin, J.</p>
-                <div class="pub-meta-row">
-                  <span class="pub-venue-tag">Preprints.org &mdash; September 2020</span>
-                </div>
-                <div class="pub-links">
-                  <a href="https://doi.org/10.20944/preprints202009.0393.v1" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Preprint</a>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div><!-- /2020 -->
-
+  <!-- FILTER BAR -->
+  <div class="filter-bar" role="navigation" aria-label="Filter publications">
+    <div class="container">
+      <div class="filter-inner">
+        <span class="filter-label">Filter</span>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="journal">Journal Articles</button>
+        <button class="filter-btn" data-filter="workshop">Workshop &amp; Conference</button>
+        <button class="filter-btn" data-filter="preprint">Preprints</button>
       </div>
-    </section>
+    </div>
+  </div>
 
+  <!-- MAIN -->
+  <main id="main">
+    <div class="container">
+
+      <!-- ====== 2026 ====== -->
+      <section class="year-section" data-year="2026" aria-labelledby="y2026">
+        <h2 class="year-heading" id="y2026">2026 <span class="section-count" aria-label="2 publications">2</span></h2>
+
+        <!-- Metaphor — Applied Corpus Linguistics (journal, e-pub 2026) -->
+        <article class="pub-card" data-type="journal">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon journal" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span class="pub-type-label">Journal</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Metaphor identification using large language models: A comparison of RAG, prompt engineering, and fine-tuning</h3>
+            <p class="pub-authors">Fuoli, M., <strong>Huang, W.</strong>, Littlemore, J., Turner, S., &amp; Wilding, E.</p>
+            <div class="pub-meta">
+              <span class="pub-venue"><em>Applied Corpus Linguistics</em>, 100204</span>
+              <span class="pub-status">E-pub ahead of print</span>
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.48550/arXiv.2509.24866" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv preprint</a>
+              <a href="https://research.birmingham.ac.uk/en/publications/metaphor-identification-using-large-language-models-a-comparison--2/" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Birmingham Pure</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Interpretable Chinese Metaphor — arXiv 2026 (preprint) -->
+        <article class="pub-card" data-type="preprint">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon preprint" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <span class="pub-type-label">Preprint</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Interpretable Chinese Metaphor Identification via LLM-Assisted MIPVU Rule Script Generation: A Comparative Protocol Study</h3>
+            <p class="pub-authors"><strong>Huang, W.</strong>, &amp; Liu, M.</p>
+            <div class="pub-meta">
+              <span class="pub-venue">arXiv:2603.10784 [cs.CL]</span>
+            </div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2603.10784" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ====== 2025 ====== -->
+      <section class="year-section" data-year="2025" aria-labelledby="y2025">
+        <h2 class="year-heading" id="y2025">2025 <span class="section-count" aria-label="3 publications">3</span></h2>
+
+        <!-- PLOS ONE -->
+        <article class="pub-card" data-type="journal">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon journal" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span class="pub-type-label">Journal</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Attributing authorship via the perplexity of authorial language models</h3>
+            <p class="pub-authors"><strong>Huang, W.</strong>, Murakami, A., &amp; Grieve, J.</p>
+            <div class="pub-meta">
+              <span class="pub-venue"><em>PLOS ONE</em>, 20(7), e0327081</span>
+              <span class="pub-cites">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                ~6 citations
+              </span>
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1371/journal.pone.0327081" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; DOI</a>
+              <a href="https://research.birmingham.ac.uk/en/publications/attributing-authorship-via-the-perplexity-of-authorial-language-m/" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Birmingham Pure</a>
+              <a href="https://github.com/Weihang-Huang/ALMs" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Frontiers in AI -->
+        <article class="pub-card" data-type="journal">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon journal" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span class="pub-type-label">Journal</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">The sociolinguistic foundations of language modeling</h3>
+            <p class="pub-authors">Grieve, J., Bartl, S., Fuoli, M., Grafmiller, J., <strong>Huang, W.</strong>, Jawerbaum, A., Murakami, A., Perlman, M., Roemling, D., &amp; Winter, B.</p>
+            <div class="pub-meta">
+              <span class="pub-venue"><em>Frontiers in Artificial Intelligence</em>, 7, 1472411</span>
+              <span class="pub-cites">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                ~38 citations
+              </span>
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.3389/frai.2024.1472411" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; DOI</a>
+              <a href="https://arxiv.org/abs/2407.09241" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ChatGPT preprint -->
+        <article class="pub-card" data-type="preprint">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon preprint" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <span class="pub-type-label">Preprint</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">ChatGPT-generated texts show authorship traits that identify them as non-human</h3>
+            <p class="pub-authors">Dentella, V., <strong>Huang, W.</strong>, Mansi, S. A., Grieve, J., &amp; Leivada, E.</p>
+            <div class="pub-meta">
+              <span class="pub-venue">arXiv:2508.16385 [cs.CL]</span>
+            </div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2508.16385" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; arXiv</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ====== 2024 ====== -->
+      <section class="year-section" data-year="2024" aria-labelledby="y2024">
+        <h2 class="year-heading" id="y2024">2024 <span class="section-count" aria-label="1 publication">1</span></h2>
+
+        <!-- PAN @ CLEF 2024 -->
+        <article class="pub-card" data-type="workshop">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon workshop" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span class="pub-type-label">Workshop</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Authorial language models for AI authorship verification</h3>
+            <p class="pub-authors"><strong>Huang, W.</strong>, &amp; Grieve, J.</p>
+            <div class="pub-meta">
+              <span class="pub-venue"><em>CEUR Workshop Proceedings</em>, Vol. 3740, pp. 2645–2652 &mdash; PAN @ CLEF 2024</span>
+              <span class="pub-cites">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                ~7 citations
+              </span>
+            </div>
+            <div class="pub-links">
+              <a href="https://ceur-ws.org/Vol-3740/paper-245.pdf" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; PDF</a>
+              <a href="https://research.birmingham.ac.uk/en/publications/authorial-language-models-for-ai-authorship-verification/" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; Birmingham Pure</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ====== 2020 ====== -->
+      <section class="year-section" data-year="2020" aria-labelledby="y2020">
+        <h2 class="year-heading" id="y2020">2020 <span class="section-count" aria-label="2 publications">2</span></h2>
+
+        <!-- NZ English Phylogenetic -->
+        <article class="pub-card" data-type="workshop">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon proceedings" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <span class="pub-type-label">Proceedings</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Re-investigating English Origins of New Zealand English via Phylogenetic Reconstruction</h3>
+            <p class="pub-authors"><strong>Huang, W.</strong></p>
+            <div class="pub-meta">
+              <span class="pub-venue"><em>Proceedings of the 56th International Academic Conference</em>, Lisbon. IISES.</span>
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.20472/IAC.2020.056.005" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; DOI</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gender Code-Switching Preprint -->
+        <article class="pub-card" data-type="preprint">
+          <div class="pub-type-badge">
+            <div class="pub-type-icon preprint" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <span class="pub-type-label">Preprint</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Seeking Gender Difference in Code-Switching by Investigating Mandarin-English Child Bilingual in Singapore</h3>
+            <p class="pub-authors"><strong>Huang, W.</strong>, Lyu, D., &amp; Lin, J.</p>
+            <div class="pub-meta">
+              <span class="pub-venue">Preprints.org, 2020090393</span>
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.20944/preprints202009.0393.v1" class="pub-link" target="_blank" rel="noopener noreferrer">&#x2197; DOI</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- EMPTY STATE (hidden by default, shown by JS when filter has no results) -->
+      <div class="empty-state" id="empty-state" style="display:none;" aria-live="polite">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto;color:var(--color-text-faint)" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <p>No publications match this filter.</p>
+      </div>
+
+    </div><!-- /container -->
   </main>
+
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip" aria-labelledby="contact-pub-heading">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <h2 id="contact-pub-heading">Interested in Collaborating?</h2>
+          <p>I am open to collaborations in authorship attribution, LLM evaluation, and corpus linguistics.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:wxh207@student.bham.ac.uk" class="contact-link primary">&#x2709; Email Me</a>
+          <a href="https://scholar.google.com/citations?user=y4dYpPAAAAAJ&hl=en" class="contact-link" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://orcid.org/0000-0002-0820-4476" class="contact-link" target="_blank" rel="noopener noreferrer">ORCID</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -560,7 +437,7 @@
   </footer>
 
   <script>
-    /* ── THEME TOGGLE ─────────────────────────────────────────── */
+    /* Theme toggle */
     (function(){
       const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
       let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
@@ -570,36 +447,37 @@
       if(t){t.innerHTML=d==='dark'?sun:moon;t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=d==='dark'?sun:moon;t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');});}
     })();
 
-    /* ── HAMBURGER ────────────────────────────────────────────── */
+    /* Mobile nav */
     const ham=document.getElementById('nav-hamburger'),nl=document.getElementById('nav-links');
     if(ham&&nl){ham.addEventListener('click',()=>{const o=nl.classList.toggle('open');ham.setAttribute('aria-expanded',o);});}
 
-    /* ── FILTER ───────────────────────────────────────────────── */
-    const filterBtns=document.querySelectorAll('.filter-btn');
-    const pubCards=document.querySelectorAll('.pub-card');
-    const countEl=document.getElementById('pub-count');
-    const emptyEl=document.getElementById('empty-state');
-    const yearGroups=document.querySelectorAll('.year-group');
+    /* Publication filter */
+    (function(){
+      const btns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.pub-card');
+      const sections = document.querySelectorAll('.year-section');
+      const empty = document.getElementById('empty-state');
+      let current = 'all';
 
-    function applyFilter(type){
-      filterBtns.forEach(b=>b.classList.toggle('active',b.dataset.filter===type));
-      let visible=0;
-      pubCards.forEach(card=>{
-        const show=(type==='all'||card.dataset.type===type);
-        card.dataset.hidden=show?'false':'true';
-        if(show)visible++;
-      });
-      yearGroups.forEach(group=>{
-        const groupVisible=Array.from(group.querySelectorAll('.pub-card')).some(c=>c.dataset.hidden!=='true');
-        group.style.display=groupVisible?'':'none';
-      });
-      const label=visible===1?'1 publication':visible+' publications';
-      countEl.textContent=label;
-      emptyEl.classList.toggle('visible',visible===0);
-    }
+      function applyFilter(filter){
+        current = filter;
+        btns.forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+        let anyVisible = false;
+        cards.forEach(c => {
+          const show = filter === 'all' || c.dataset.type === filter;
+          c.style.display = show ? '' : 'none';
+          if(show) anyVisible = true;
+        });
+        // hide year headings that have no visible cards
+        sections.forEach(sec => {
+          const hasVisible = [...sec.querySelectorAll('.pub-card')].some(c => c.style.display !== 'none');
+          sec.style.display = hasVisible ? '' : 'none';
+        });
+        empty.style.display = anyVisible ? 'none' : 'block';
+      }
 
-    filterBtns.forEach(btn=>{btn.addEventListener('click',()=>applyFilter(btn.dataset.filter));});
-    applyFilter('all');
+      btns.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
+    })();
   </script>
 </body>
 </html>
