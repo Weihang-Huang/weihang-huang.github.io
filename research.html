@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Weihang Huang</title>
+  <meta name="description" content="Research overview of Weihang Huang: authorship attribution, large language models, corpus linguistics, metaphor identification, and forensic stylistics." />
+  <meta property="og:title" content="Research — Weihang Huang" />
+  <meta property="og:description" content="Research by Weihang Huang, PhD candidate at the University of Birmingham, on authorship attribution, LLMs, and computational linguistics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://weihang-huang.github.io/research.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    /* ── DESIGN TOKENS (identical to index.html) ─────────────────── */
+    :root,[data-theme="light"]{--color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-surface-offset:#f3f0ec;--color-surface-offset-2:#edeae5;--color-surface-dynamic:#e6e4df;--color-divider:#dcd9d5;--color-border:#d4d1ca;--color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;--color-text-inverse:#f9f8f4;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-active:#0f3638;--color-primary-highlight:#cedcd8;--shadow-sm:0 1px 2px oklch(0.2 0.01 80/0.06);--shadow-md:0 4px 12px oklch(0.2 0.01 80/0.08);--shadow-lg:0 12px 32px oklch(0.2 0.01 80/0.12);--radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-xl:1rem;--radius-full:9999px;--transition-interactive:180ms cubic-bezier(0.16,1,0.3,1);--font-display:'Instrument Serif',Georgia,serif;--font-body:'Work Sans','Helvetica Neue',sans-serif;--text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);--text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);--text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);--text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);--text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);--text-3xl:clamp(2.5rem,1rem + 4vw,5rem);--space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;--content-narrow:640px;--content-default:960px;--content-wide:1200px}
+    [data-theme="dark"]{--color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;--color-surface-offset:#1d1c1a;--color-surface-offset-2:#22211f;--color-surface-dynamic:#2d2c2a;--color-divider:#262523;--color-border:#393836;--color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;--color-text-inverse:#2b2a28;--color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-primary-active:#1a626b;--color-primary-highlight:#313b3b;--shadow-sm:0 1px 2px oklch(0 0 0/0.2);--shadow-md:0 4px 12px oklch(0 0 0/0.3);--shadow-lg:0 12px 32px oklch(0 0 0/0.4)}
+    @media(prefers-color-scheme:dark){:root:not([data-theme]){--color-bg:#171614;--color-surface:#1c1b19;--color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;--color-text-inverse:#2b2a28;--color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-primary-highlight:#313b3b;--color-divider:#262523;--color-border:#393836;--color-surface-offset:#1d1c1a;--color-surface-dynamic:#2d2c2a}}
+
+    /* ── BASE ─────────────────────────────────────────────────────── */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:none;text-size-adjust:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:var(--space-16)}
+    body{min-height:100dvh;line-height:1.6;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background-color:var(--color-bg);transition:background-color 250ms ease,color 250ms ease}
+    img,picture,svg{display:block;max-width:100%;height:auto}
+    ul[role="list"],ol[role="list"]{list-style:none}
+    input,button,textarea,select{font:inherit;color:inherit}
+    h1,h2,h3,h4,h5,h6{text-wrap:balance;line-height:1.15}
+    p,li,figcaption{text-wrap:pretty;max-width:72ch}
+    ::selection{background:oklch(from var(--color-primary) l c h/0.2);color:var(--color-text)}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    a,button,[role="button"]{transition:color var(--transition-interactive),background var(--transition-interactive),border-color var(--transition-interactive),box-shadow var(--transition-interactive),opacity var(--transition-interactive)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+    .container{max-width:var(--content-default);margin-inline:auto;padding-inline:var(--space-6)}
+    .divider{height:1px;background:var(--color-divider)}
+
+    /* ── NAV (identical to index.html) ───────────────────────────── */
+    .site-nav{position:sticky;top:0;z-index:100;background:oklch(from var(--color-bg) l c h/0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid oklch(from var(--color-text) l c h/0.08)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:var(--space-4)}
+    .nav-logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:var(--color-text)}
+    .nav-logo-name{font-family:var(--font-display);font-size:var(--text-lg);font-weight:400;letter-spacing:-.02em;line-height:1.1}
+    .nav-links{display:flex;align-items:center;gap:var(--space-8);list-style:none}
+    .nav-links a{font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);text-decoration:none;letter-spacing:.01em}
+    .nav-links a:hover{color:var(--color-primary)}
+    .nav-links a.active{color:var(--color-text)}
+    .nav-actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle{background:none;border:none;cursor:pointer;color:var(--color-text-muted);padding:var(--space-2);border-radius:var(--radius-md);display:flex;align-items:center;min-width:44px;min-height:44px;justify-content:center}
+    .theme-toggle:hover{color:var(--color-text);background:var(--color-surface-offset)}
+    .nav-hamburger{display:none;background:none;border:none;cursor:pointer;color:var(--color-text);padding:var(--space-2);min-width:44px;min-height:44px;align-items:center;justify-content:center;border-radius:var(--radius-md)}
+    @media(max-width:768px){.nav-hamburger{display:flex}.nav-links{display:none;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:var(--color-surface);border-bottom:1px solid var(--color-divider);padding:var(--space-4) var(--space-6)}.nav-links.open{display:flex}.nav-links li{width:100%}.nav-links a{display:block;padding:var(--space-3) 0;font-size:var(--text-base)}}
+
+    /* ── SHARED TYPOGRAPHY ───────────────────────────────────────── */
+    .section-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-3)}
+    .section-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em;line-height:1.1;margin-bottom:var(--space-4)}
+    .section-lead{font-size:var(--text-base);color:var(--color-text-muted);max-width:60ch;line-height:1.7;margin-bottom:var(--space-10)}
+    .btn{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;padding:var(--space-3) var(--space-5);border-radius:var(--radius-md);text-decoration:none;cursor:pointer;border:none;letter-spacing:.01em;min-height:44px}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse)}
+    .btn-primary:hover{background:var(--color-primary-hover)}
+    .btn-outline{background:transparent;color:var(--color-text);border:1px solid oklch(from var(--color-text) l c h/0.2)}
+    .btn-outline:hover{background:var(--color-surface-offset);border-color:oklch(from var(--color-text) l c h/0.35)}
+
+    /* ── PAGE HERO ────────────────────────────────────────────────── */
+    .page-hero{background:var(--color-surface);border-bottom:1px solid var(--color-divider);padding-block:clamp(var(--space-12),7vw,var(--space-20))}
+    .page-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em;line-height:1.1;margin-bottom:var(--space-4)}
+    .page-lead{font-size:var(--text-base);color:var(--color-text-muted);max-width:60ch;line-height:1.7}
+
+    /* ── THESIS SECTION ──────────────────────────────────────────── */
+    .thesis-section{padding-block:clamp(var(--space-12),6vw,var(--space-20));background:var(--color-bg)}
+    .thesis-card{display:grid;grid-template-columns:1fr auto;gap:var(--space-10);align-items:start;background:var(--color-surface);border:1px solid oklch(from var(--color-text) l c h/0.08);border-radius:var(--radius-xl);padding:clamp(var(--space-8),4vw,var(--space-12));box-shadow:var(--shadow-md)}
+    @media(max-width:640px){.thesis-card{grid-template-columns:1fr}}
+    .thesis-kicker{font-size:var(--text-xs);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-3)}
+    .thesis-title{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);letter-spacing:-.02em;line-height:1.2;margin-bottom:var(--space-4);max-width:none;font-style:italic}
+    .thesis-body{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.75;max-width:62ch;margin-bottom:var(--space-6)}
+    .thesis-meta{display:flex;flex-direction:column;gap:var(--space-3);min-width:220px}
+    .thesis-meta-item{display:flex;flex-direction:column;gap:var(--space-1)}
+    .meta-label{font-size:var(--text-xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-faint)}
+    .meta-value{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.4}
+    .thesis-divider{height:1px;background:var(--color-divider);margin-block:var(--space-4)}
+
+    /* ── RESEARCH AREAS ─────────────────────────────────────────── */
+    .areas-section{padding-block:clamp(var(--space-12),6vw,var(--space-20));background:var(--color-surface)}
+    .area-block{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-10) var(--space-12);align-items:start;padding-block:var(--space-10);border-bottom:1px solid var(--color-divider)}
+    .area-block:last-child{border-bottom:none}
+    .area-block:nth-child(even) .area-text{order:2}
+    .area-block:nth-child(even) .area-visual{order:1}
+    @media(max-width:680px){.area-block{grid-template-columns:1fr}.area-block:nth-child(even) .area-text{order:unset}.area-block:nth-child(even) .area-visual{order:unset}}
+    .area-num{font-family:var(--font-display);font-size:var(--text-3xl);font-weight:400;color:oklch(from var(--color-primary) l c h/0.15);line-height:1;margin-bottom:var(--space-2);letter-spacing:-.04em}
+    .area-title{font-family:var(--font-display);font-size:var(--text-lg);font-weight:400;color:var(--color-text);letter-spacing:-.01em;margin-bottom:var(--space-4);line-height:1.2}
+    .area-body{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.75;max-width:48ch;margin-bottom:var(--space-5)}
+    .area-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-5)}
+    .area-tag{font-size:var(--text-xs);font-weight:500;background:var(--color-primary-highlight);color:var(--color-primary);padding:var(--space-1) var(--space-3);border-radius:var(--radius-full)}
+    [data-theme="dark"] .area-tag{background:var(--color-primary-highlight);color:var(--color-primary)}
+    .area-pubs{font-size:var(--text-xs);color:var(--color-text-faint);font-weight:500}
+    .area-pubs a{color:var(--color-primary);text-decoration:none}
+    .area-pubs a:hover{text-decoration:underline}
+    .area-visual{background:var(--color-surface-2);border:1px solid oklch(from var(--color-text) l c h/0.07);border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:var(--space-4)}
+    .visual-title{font-size:var(--text-xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-1)}
+    /* mini chart bars */
+    .mini-chart{display:flex;align-items:flex-end;gap:var(--space-2);height:80px}
+    .mini-bar{flex:1;border-radius:var(--radius-sm) var(--radius-sm) 0 0;background:var(--color-primary-highlight);position:relative;min-width:0;transition:background var(--transition-interactive)}
+    .mini-bar:hover{background:var(--color-primary)}
+    .mini-bar-label{position:absolute;bottom:-var(--space-5);left:50%;transform:translateX(-50%);font-size:10px;color:var(--color-text-faint);white-space:nowrap}
+    /* formula display */
+    .formula-block{background:var(--color-surface-offset);border-radius:var(--radius-md);padding:var(--space-4) var(--space-5);font-family:'Georgia',serif;font-style:italic;font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;text-align:center}
+    .formula-caption{font-size:var(--text-xs);color:var(--color-text-faint);text-align:center;margin-top:var(--space-2)}
+    /* concept list */
+    .concept-list{display:flex;flex-direction:column;gap:var(--space-3)}
+    .concept-item{display:flex;align-items:center;gap:var(--space-3)}
+    .concept-dot{width:8px;height:8px;border-radius:50%;background:var(--color-primary);flex-shrink:0}
+    .concept-text{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.4;max-width:none}
+    .concept-text strong{color:var(--color-text);font-weight:600}
+    /* comparison table in visual */
+    .mini-table{width:100%;border-collapse:collapse}
+    .mini-table th{font-size:var(--text-xs);font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-faint);padding:var(--space-2) var(--space-3);text-align:left;border-bottom:1px solid var(--color-divider)}
+    .mini-table td{font-size:var(--text-xs);color:var(--color-text-muted);padding:var(--space-2) var(--space-3);border-bottom:1px solid oklch(from var(--color-text) l c h/0.05)}
+    .mini-table tr:last-child td{border-bottom:none}
+    .tag-pill{display:inline-block;font-size:10px;font-weight:600;padding:1px var(--space-2);border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary)}
+
+    /* ── COLLABORATORS ──────────────────────────────────────────── */
+    .collab-section{padding-block:clamp(var(--space-12),6vw,var(--space-20));background:var(--color-bg)}
+    .collab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:var(--space-4)}
+    .collab-card{background:var(--color-surface);border:1px solid oklch(from var(--color-text) l c h/0.07);border-radius:var(--radius-lg);padding:var(--space-5);box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:var(--space-2)}
+    .collab-card:hover{box-shadow:var(--shadow-md)}
+    .collab-name{font-size:var(--text-sm);font-weight:600;color:var(--color-text)}
+    .collab-name a{color:inherit;text-decoration:none}
+    .collab-name a:hover{color:var(--color-primary)}
+    .collab-role{font-size:var(--text-xs);color:var(--color-text-muted);line-height:1.4;max-width:none}
+    .collab-inst{font-size:var(--text-xs);color:var(--color-text-faint)}
+
+    /* ── CONTACT STRIP (same as index.html) ──────────────────────── */
+    .contact-section{background:color-mix(in oklch,var(--color-primary) 8%,var(--color-surface));border-top:1px solid var(--color-divider);padding-block:clamp(var(--space-12),6vw,var(--space-20))}
+    .contact-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-6)}
+    .contact-text h2{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);margin-bottom:var(--space-2)}
+    .contact-text p{font-size:var(--text-base);color:var(--color-text-muted);max-width:50ch}
+    .contact-links{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center}
+    .contact-link{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);text-decoration:none;padding:var(--space-2) var(--space-4);border:1px solid oklch(from var(--color-text) l c h/0.15);border-radius:var(--radius-md);background:var(--color-surface);min-height:44px}
+    .contact-link:hover{color:var(--color-primary);border-color:var(--color-primary);background:var(--color-primary-highlight)}
+    .contact-email-btn{background:var(--color-primary);color:var(--color-text-inverse);border-color:var(--color-primary);font-weight:600}
+    .contact-email-btn:hover{background:var(--color-primary-hover);border-color:var(--color-primary-hover);color:var(--color-text-inverse)}
+
+    /* ── FOOTER ─────────────────────────────────────────────────── */
+    footer{background:var(--color-surface-offset);border-top:1px solid var(--color-divider);padding-block:var(--space-8)}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4)}
+    .footer-copy{font-size:var(--text-xs);color:var(--color-text-faint)}
+    .footer-links{display:flex;gap:var(--space-5)}
+    .footer-links a{font-size:var(--text-xs);color:var(--color-text-faint);text-decoration:none}
+    .footer-links a:hover{color:var(--color-text-muted)}
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Weihang Huang home">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
+            <path d="M8 11 L11 25 L14.5 17 L18 25 L21.5 11" stroke="var(--color-text-inverse)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <line x1="24" y1="11" x2="24" y2="25" stroke="var(--color-text-inverse)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="24" y1="18" x2="29" y2="18" stroke="var(--color-text-inverse)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="29" y1="11" x2="29" y2="25" stroke="var(--color-text-inverse)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="nav-logo-name">Weihang Huang</span>
+        </a>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="talks.html">Talks</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+      <div class="container">
+        <p class="section-label">Scholarship</p>
+        <h1 class="page-title">Research</h1>
+        <p class="page-lead">I work at the intersection of computational linguistics, natural language processing, and forensic stylistics &mdash; investigating how language models encode authorial identity and how that encoding can be operationalised for attribution, verification, and linguistic measurement.</p>
+      </div>
+    </header>
+
+    <!-- THESIS -->
+    <section class="thesis-section" aria-labelledby="thesis-heading">
+      <div class="container">
+        <p class="section-label">Doctoral Work</p>
+        <div class="thesis-card">
+          <div>
+            <p class="thesis-kicker">PhD Thesis &mdash; University of Birmingham, 2022&ndash;2026</p>
+            <h2 id="thesis-heading" class="thesis-title">Style in the Eye of Machine: Authorial Attribution via Large Language Models</h2>
+            <p class="thesis-body">My thesis develops a framework called <strong>Authorial Language Models (ALMs)</strong> &mdash; author-specific fine-tunes of GPT-2 that encode an individual&rsquo;s stylistic fingerprint in the model weights. The central claim is that the <em>perplexity</em> assigned by an ALM to an unseen text is a reliable, interpretable measure of stylistic distance between that text and the author&rsquo;s known writings.</p>
+            <p class="thesis-body" style="margin-top:var(--space-4);">The framework is applied across three tasks: (1) closed-set authorship attribution, (2) open-set authorship verification including AI-generated text detection, and (3) relative lexical frequency estimation as a proxy for linguistic productivity. The work bridges classical stylometry with modern LLM methodology, offering both practical tools for forensic linguistics and theoretical contributions to the sociolinguistics of language modelling.</p>
+            <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-6);">
+              <a href="publications.html" class="btn btn-primary" style="font-size:var(--text-sm);">Related Publications</a>
+              <a href="https://github.com/Weihang-Huang" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="font-size:var(--text-sm);">Code on GitHub</a>
+            </div>
+          </div>
+          <div class="thesis-meta">
+            <div class="thesis-meta-item">
+              <span class="meta-label">Supervisors</span>
+              <span class="meta-value">Jack Grieve<br>Akira Murakami</span>
+            </div>
+            <div class="thesis-divider" aria-hidden="true"></div>
+            <div class="thesis-meta-item">
+              <span class="meta-label">Department</span>
+              <span class="meta-value">English Language &amp; Applied Linguistics<br>University of Birmingham</span>
+            </div>
+            <div class="thesis-divider" aria-hidden="true"></div>
+            <div class="thesis-meta-item">
+              <span class="meta-label">Period</span>
+              <span class="meta-value">Sep 2022 &ndash; Jul 2026 (expected)</span>
+            </div>
+            <div class="thesis-divider" aria-hidden="true"></div>
+            <div class="thesis-meta-item">
+              <span class="meta-label">Methods</span>
+              <span class="meta-value">GPT-2 fine-tuning &middot; Perplexity analysis &middot; Stylometry &middot; Corpus linguistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <!-- RESEARCH AREAS -->
+    <section class="areas-section" aria-labelledby="areas-heading">
+      <div class="container">
+        <p class="section-label">Focus Areas</p>
+        <h2 id="areas-heading" class="section-title">Research Threads</h2>
+        <p class="section-lead">Five interconnected threads span my work, each asking a variant of the same question: what can the internal representations of language models reveal about human language?</p>
+
+        <!-- 1. Authorship Attribution -->
+        <div class="area-block">
+          <div class="area-text">
+            <div class="area-num" aria-hidden="true">01</div>
+            <h3 class="area-title">Authorship Attribution &amp; Stylometry</h3>
+            <p class="area-body">Classic stylometry identifies authors from measurable surface features &mdash; function word frequencies, punctuation patterns, sentence length. My work replaces hand-crafted features with a single learned quantity: the <em>perplexity</em> of an author-specific language model. An ALM trained on an author&rsquo;s known writing assigns low perplexity to their texts and high perplexity to others&rsquo; &mdash; encoding style holistically rather than through pre-selected features.</p>
+            <div class="area-tags">
+              <span class="area-tag">ALMs</span>
+              <span class="area-tag">GPT-2 fine-tuning</span>
+              <span class="area-tag">Perplexity</span>
+              <span class="area-tag">Closed-set attribution</span>
+            </div>
+            <p class="area-pubs">Key paper: <a href="https://doi.org/10.1371/journal.pone.0327081" target="_blank" rel="noopener noreferrer">PLOS ONE 2025</a> &middot; <a href="publications.html">All related publications &rarr;</a></p>
+          </div>
+          <div class="area-visual" aria-hidden="true">
+            <p class="visual-title">Perplexity as a distance measure</p>
+            <div class="formula-block">
+              PPL(text | ALM<sub>author</sub>) = exp(&minus;&#x1D5FA; log P(w<sub>i</sub> | w<sub>&lt;i</sub>))
+            </div>
+            <p class="formula-caption">Lower perplexity &rarr; higher stylistic similarity to training author</p>
+            <div class="concept-list" style="margin-top:var(--space-4);">
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Fine-tune</strong> one GPT-2 per candidate author</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Score</strong> disputed text with every ALM</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Assign</strong> to author with minimum perplexity</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. AI Authorship Verification -->
+        <div class="area-block">
+          <div class="area-text">
+            <div class="area-num" aria-hidden="true">02</div>
+            <h3 class="area-title">AI-Generated Text Detection</h3>
+            <p class="area-body">ChatGPT and similar systems leave measurable stylometric traces that distinguish them from human authors. With colleagues, I have shown that ALMs can detect AI-generated text by treating the AI itself as a candidate &ldquo;author&rdquo; whose stylistic profile is learnable. The open-set formulation &mdash; where the true author may not appear in the training set &mdash; maps directly onto real-world verification tasks.</p>
+            <div class="area-tags">
+              <span class="area-tag">AI detection</span>
+              <span class="area-tag">Authorship verification</span>
+              <span class="area-tag">Open-set classification</span>
+              <span class="area-tag">CLEF PAN</span>
+            </div>
+            <p class="area-pubs">Key papers: <a href="https://arxiv.org/abs/2508.16385" target="_blank" rel="noopener noreferrer">arXiv 2508.16385</a> &middot; CLEF 2024 (PAN) workshop</p>
+          </div>
+          <div class="area-visual" aria-hidden="true">
+            <p class="visual-title">Human vs. AI stylometric gap</p>
+            <div class="concept-list">
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Token distribution</strong> in ChatGPT is markedly narrower than human writers of comparable genre</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Lexical diversity</strong> (TTR, MSTTR) systematically lower in generated text</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Perplexity gap</strong> between human ALM and AI-author ALM separates classes reliably</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Features persist</strong> across prompting strategies and model versions</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. LLM Perplexity as Linguistic Measure -->
+        <div class="area-block">
+          <div class="area-text">
+            <div class="area-num" aria-hidden="true">03</div>
+            <h3 class="area-title">LLM Perplexity as Linguistic Measurement</h3>
+            <p class="area-body">Beyond authorship, perplexity from a general-purpose LLM is a theoretically motivated proxy for relative lexical frequency: rare words yield higher surprisal than common ones. I am developing a probabilistic framework that calibrates LLM perplexity scores against corpus-based frequency counts, validating the measure on the <em>British National Corpus</em> and exploring its use in forensic vocabulary analysis where corpora are unavailable.</p>
+            <div class="area-tags">
+              <span class="area-tag">Surprisal</span>
+              <span class="area-tag">Lexical frequency</span>
+              <span class="area-tag">BNC</span>
+              <span class="area-tag">Probabilistic NLP</span>
+            </div>
+            <p class="area-pubs">Presented at: Corpus Linguistics International 2024, 2025 &middot; Forensic Linguistics Symposium 2024</p>
+          </div>
+          <div class="area-visual" aria-hidden="true">
+            <p class="visual-title">Surprisal &amp; frequency</p>
+            <div class="formula-block">
+              &minus;log P(w | context) &asymp; &minus;log freq(w) + noise
+            </div>
+            <p class="formula-caption">LLM surprisal &asymp; inverse corpus frequency under controlled conditions</p>
+            <div style="margin-top:var(--space-4);">
+              <p class="visual-title">Frequency bands (BNC validation)</p>
+              <div class="mini-chart" aria-label="Illustrative perplexity by frequency band">
+                <div class="mini-bar" style="height:20%" title="Very common (>1000 ppm)"></div>
+                <div class="mini-bar" style="height:35%" title="Common (100-1000 ppm)"></div>
+                <div class="mini-bar" style="height:54%" title="Medium (10-100 ppm)"></div>
+                <div class="mini-bar" style="height:72%" title="Rare (1-10 ppm)"></div>
+                <div class="mini-bar" style="height:90%" title="Very rare (<1 ppm)"></div>
+              </div>
+              <p style="font-size:10px;color:var(--color-text-faint);margin-top:var(--space-2);text-align:center;">← higher freq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lower freq → &nbsp; (bars = mean perplexity)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Metaphor Identification -->
+        <div class="area-block">
+          <div class="area-text">
+            <div class="area-num" aria-hidden="true">04</div>
+            <h3 class="area-title">Metaphor Identification with LLMs</h3>
+            <p class="area-body">In collaboration with Jeanette Littlemore&rsquo;s group at Birmingham, I am comparing three LLM-based approaches to automated metaphor identification: retrieval-augmented generation (RAG), zero- and few-shot prompt engineering, and supervised fine-tuning. The project uses the VU Amsterdam Metaphor Corpus and a custom domain corpus to benchmark methods against human annotation, with the goal of a scalable pipeline for metaphor extraction in clinical and educational contexts.</p>
+            <div class="area-tags">
+              <span class="area-tag">Metaphor</span>
+              <span class="area-tag">RAG</span>
+              <span class="area-tag">Prompt engineering</span>
+              <span class="area-tag">Fine-tuning</span>
+              <span class="area-tag">VUAMC</span>
+            </div>
+            <p class="area-pubs">Key paper: <a href="https://arxiv.org/abs/2509.24866" target="_blank" rel="noopener noreferrer">arXiv 2509.24866</a></p>
+          </div>
+          <div class="area-visual" aria-hidden="true">
+            <p class="visual-title">Method comparison</p>
+            <table class="mini-table">
+              <thead>
+                <tr><th>Method</th><th>Strengths</th><th>Limitations</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="tag-pill">RAG</span></td><td>Contextual examples; no retraining</td><td>Retrieval quality dependency</td></tr>
+                <tr><td><span class="tag-pill">Prompting</span></td><td>Zero-shot; fast; flexible</td><td>Inconsistent on edge cases</td></tr>
+                <tr><td><span class="tag-pill">Fine-tuning</span></td><td>Best F1 on in-domain data</td><td>Data &amp; compute cost</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. Corpus & Sociolinguistics -->
+        <div class="area-block">
+          <div class="area-text">
+            <div class="area-num" aria-hidden="true">05</div>
+            <h3 class="area-title">Corpus Linguistics &amp; Sociolinguistic Variation</h3>
+            <p class="area-body">My broader computational linguistics work spans two strands: (i) the sociolinguistic underpinnings of language model training data &mdash; how register, dialect, and author demographics shape what LLMs &ldquo;know&rdquo; &mdash; and (ii) phylogenetic and corpus-based approaches to understudied language varieties such as Tanka, a maritime Cantonese variety, and code-switching patterns in Cantonese-English bilingual children.</p>
+            <div class="area-tags">
+              <span class="area-tag">Sociolinguistics</span>
+              <span class="area-tag">Corpus methods</span>
+              <span class="area-tag">Phylogenetics</span>
+              <span class="area-tag">Code-switching</span>
+              <span class="area-tag">BEAST2</span>
+            </div>
+            <p class="area-pubs">Key paper: <a href="https://www.frontiersin.org/articles/10.3389/frai.2024.1472411" target="_blank" rel="noopener noreferrer">Frontiers in AI 2025</a> &middot; Methods in Dialectology 2024</p>
+          </div>
+          <div class="area-visual" aria-hidden="true">
+            <p class="visual-title">Sociolinguistic dimensions of LM training data</p>
+            <div class="concept-list">
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Register bias:</strong> web-scraped corpora over-represent formal, edited prose</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Dialect gaps:</strong> minority and regional varieties remain underrepresented</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Author demographics:</strong> age, gender, and L1 affect lexical and syntactic choices encoded in LMs</span></div>
+              <div class="concept-item"><span class="concept-dot"></span><span class="concept-text"><strong>Implication:</strong> sociolinguistic awareness is necessary for fair, interpretable LMs</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <!-- COLLABORATORS -->
+    <section class="collab-section" aria-labelledby="collab-heading">
+      <div class="container">
+        <p class="section-label">Community</p>
+        <h2 id="collab-heading" class="section-title">Collaborators</h2>
+        <p class="section-lead">I am fortunate to work with researchers across linguistics, NLP, and cognitive science.</p>
+        <div class="collab-grid">
+          <div class="collab-card">
+            <p class="collab-name"><a href="https://www.birmingham.ac.uk/staff/profiles/elal/grieve-jack.aspx" target="_blank" rel="noopener noreferrer">Jack Grieve</a></p>
+            <p class="collab-role">Primary supervisor &middot; Corpus linguistics, forensic linguistics, language change</p>
+            <p class="collab-inst">University of Birmingham</p>
+          </div>
+          <div class="collab-card">
+            <p class="collab-name"><a href="https://www.birmingham.ac.uk/staff/profiles/elal/murakami-akira.aspx" target="_blank" rel="noopener noreferrer">Akira Murakami</a></p>
+            <p class="collab-role">Co-supervisor &middot; Second language acquisition, computational linguistics</p>
+            <p class="collab-inst">University of Birmingham</p>
+          </div>
+          <div class="collab-card">
+            <p class="collab-name">Jeanette Littlemore</p>
+            <p class="collab-role">Metaphor identification project &middot; Applied linguistics, cognitive semantics</p>
+            <p class="collab-inst">University of Birmingham</p>
+          </div>
+          <div class="collab-card">
+            <p class="collab-name">Evelina Leivada</p>
+            <p class="collab-role">AI authorship detection &middot; Generative linguistics, language acquisition</p>
+            <p class="collab-inst">University of Birmingham</p>
+          </div>
+          <div class="collab-card">
+            <p class="collab-name">Vittoria Dentella</p>
+            <p class="collab-role">ChatGPT authorship traits project &middot; Psycholinguistics</p>
+            <p class="collab-inst">University of Birmingham</p>
+          </div>
+          <div class="collab-card">
+            <p class="collab-name">Massimo Fuoli</p>
+            <p class="collab-role">Metaphor identification &middot; Corpus-based discourse analysis</p>
+            <p class="collab-inst">University of Birmingham</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT STRIP -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-text">
+            <h2 id="contact-heading">Interested in Collaborating?</h2>
+            <p>I am open to research visits, joint projects, and dataset sharing in authorship analysis, NLP for linguistics, and related areas.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:wxh207@student.bham.ac.uk" class="contact-link contact-email-btn">&#x2709; Email Me</a>
+            <a href="https://scholar.google.com/citations?user=y4dYpPAAAAAJ&hl=en" class="contact-link" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://github.com/Weihang-Huang" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Weihang Huang &middot; University of Birmingham</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── THEME TOGGLE ─────────────────────────────────────────── */
+    (function(){
+      const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+      let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+      r.setAttribute('data-theme',d);
+      const sun='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+      const moon='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      if(t){t.innerHTML=d==='dark'?sun:moon;t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=d==='dark'?sun:moon;t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');});}
+    })();
+    /* ── HAMBURGER ────────────────────────────────────────────── */
+    const ham=document.getElementById('nav-hamburger'),nl=document.getElementById('nav-links');
+    if(ham&&nl){ham.addEventListener('click',()=>{const o=nl.classList.toggle('open');ham.setAttribute('aria-expanded',o);});}
+  </script>
+</body>
+</html>
